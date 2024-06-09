@@ -4,9 +4,9 @@ import icon1 from '../../../assets/icon1.gif'
 const Header = () => {
     return (
         <>
-            <header className={`w-full h-[86vh] flex justify-center items-center px-4 py-2 transition duration-300`}>
-                <div className="flex flex-grow justify-center ">
-                    <div className="text-left mt-[-80px] " style={{ lineHeight: '1.2' }}>
+            <header className={`flex container justify-center items-center mx-auto px-4 py-2 `}>
+                <div className="  flex flex-grow justify-center mt-[-120px] ">
+                    <div className="text-left" style={{ lineHeight: '1.2' }}>
                         <h5 className={`fw-bold mt-5 ms-2`} style={{ fontSize: '50px', fontFamily: 'sans-serif' }} >
                             <span style={{ color: '#B5C18E' }}>Creativehr <br /> <b style={{ color: '#feba5b' }}>Empowering growth through innovative training solutions</b> </span>
                         </h5>
@@ -14,7 +14,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex flex-grow justify-center">
-                    <div className="text-right mt-14">
+                    <div className="text-right mt-[10px]">
                         <img
                             style={{ marginBottom: "55px", borderRadius: "35px", width: '1300px', height: '530px' }}
                             src={icon1}

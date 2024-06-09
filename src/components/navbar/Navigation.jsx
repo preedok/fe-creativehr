@@ -98,7 +98,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     return (
         <>
             {/* Side Bar Navigation */}
-            <div className={`fixed top-0 left-0 ${isSidebarOpen ? 'w-[275px] ' : 'w-[120px] '} rounded-[35px] h-[95%] transition-transform`} aria-label="Sidebar" style={{ zIndex: 99 }}>
+            <div className={`fixed container top-0 left-0 ${isSidebarOpen ? 'w-[275px] ' : 'w-[120px] '} rounded-[35px] h-[95%] transition-transform`} aria-label="Sidebar">
                 <div className="h-full flex flex-col bg-[#feba5b] m-5 rounded-[35px]">
                     <div className={`flex ${isSidebarOpen ? "bg-[#feba5b]  flex h-[70px] rounded-[35px]" : " bg-[#fffff] py-3 px-3 flex h-[70px] rounded-[35px]"}`} style={{ zIndex: 2 }}>
                         {isSidebarOpen ? (
