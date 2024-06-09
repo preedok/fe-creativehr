@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../assets/h.gif'
+import icon1 from '../../../assets/icon1.gif'
 
 const Header = () => {
     return (
@@ -17,7 +17,7 @@ const Header = () => {
                     <div className="text-right mt-14">
                         <img
                             style={{ marginBottom: "55px", borderRadius: "35px", width: '1300px', height: '530px' }}
-                            src={logo}
+                            src={icon1}
                             alt="hero"
                         />
                     </div>

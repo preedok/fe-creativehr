@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaRegLightbulb, FaRegSmile, FaRegThumbsUp, FaRegHeart, FaCheckCircle } from 'react-icons/fa';
-import logo from '../../../assets/logo.png'
+import icon2 from '../../../assets/icon2.gif'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -80,10 +80,10 @@ const AboutUs = () => {
                 <div className="container mx-auto px-4 flex flex-wrap">
                     <div className="w-full md:w-1/2">
                         <img
-                            src={logo} 
+                            src={icon2} 
                             alt="creativehr"
-                            className="rounded-lg"
-                            style={{ width: '100%', height: 'auto' }}
+                            className="rounded-[20px] shadow-lg"
+                            style={{ width: '90%', height: 'auto' }}
                         />
                     </div>
                     <div className="w-full md:w-1/2 flex flex-col justify-center">
