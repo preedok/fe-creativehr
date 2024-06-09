@@ -29,8 +29,8 @@ const Login = () => {
         <div className="lg:w-1/2  flex flex-col items-center justify-center p-8 lg:p-0">
           <div className="absolute top-0 left-0">
             <img src={logo} style={{ width: '220px', height: '190px' }} alt="" />
-            <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4">Log in to your Account</h2>
-            <p className="text-[#B3C8CF] px-[60px] mt-[-10px]  font-bold ">Welcome back !</p>
+            <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4 text-[#8b9679]">Log in to your Account</h2>
+            <p className="text-[#496989] px-[60px] mt-[-10px]  font-bold ">Welcome back !</p>
           </div>
           <div className="w-full max-w-md mt-[150px]">
             <form className=" w-[400px] rounded-[20px] px-8 pt-6 pb-8 mb-4">
@@ -73,7 +73,7 @@ const Login = () => {
                 </button>
               </div>
               <div className="mt-4 text-center">
-                <p style={{ fontSize: '13px', color: '#B3C8CF' }}>Don't have account? <span className="text-blue-500">Create an account</span></p>
+                <p style={{ fontSize: '13px', color: '#496989' }}>Don't have account? <span className="text-blue-500">Create an account</span></p>
               </div>
               <p className="text-center mt-5 text-gray-500 text-xs absolute bottom-0 left-0 px-4 mb-4 font-bold">
                 &copy;2024 PT CREATIVE AND TRAINING DEVELOPMENT

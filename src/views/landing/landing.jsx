@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import Navbar from './components/Navbar';
 import Header from './components/Header'
+import About from './components/About';
+import Footer from './components/Footer';
+import Founder from './components/Founder';
+import Blog from './components/Blog';
 
 const Landing = () => {
     return (
@@ -9,29 +13,13 @@ const Landing = () => {
             <Helmet>
                 <title>Creative HR | Home</title>
             </Helmet>
-            <section >
-                <Navbar />
-                <div className='mx-12'>
-                    <Header />
-                </div>
-                <div className="text-center p-10">
-                    hehe
-                </div>
-                <div className="text-center p-10">
-                    hehe
-                </div>
-                <div className="text-center p-10">
-                    hehe
-                </div>
-                <div className="text-center p-10">
-                    hehe
-                </div>
-                <div className="text-center p-10">
-                    hehe
-                </div>
-                <div className="text-center p-10">
-                    hehe
-                </div>
+            <Navbar />
+            <section className='mx-14'>
+                <Header />
+                <About />
+                <Founder/>
+                <Blog/>
+                <Footer />
             </section>
         </>
     );

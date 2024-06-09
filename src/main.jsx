@@ -6,7 +6,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className={styled.navbarBackground}>
+    <div className={`${styled.navbarBackground}`}>
       <App />
     </div>
   </React.StrictMode>,
