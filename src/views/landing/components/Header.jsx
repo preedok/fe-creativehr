@@ -1,16 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import icon1 from '../../../assets/icon1.gif'
-
+import CountUp from 'react-countup';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Header = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <>
             <header className={`flex container justify-center items-center mx-auto px-4 py-2 `}>
                 <div className="  flex flex-grow justify-center mt-[-120px] ">
                     <div className="text-left" style={{ lineHeight: '1.2' }}>
                         <h5 className={`fw-bold mt-5 ms-2`} style={{ fontSize: '50px', fontFamily: 'sans-serif' }} >
-                            <span style={{ color: '#B5C18E' }}>Creativehr <br /> <b style={{ color: '#feba5b' }}>Empowering growth through innovative training solutions</b> </span>
+                            <span data-aos="zoom-in-right"
+                                data-aos-duration="2000" style={{ color: '#B5C18E' }}>Creativehr <br /> <b style={{ color: '#feba5b' }}>Empowering growth through innovative training solutions</b> </span>
                         </h5>
-                        <p className={`ms-2 mt-2 fw-bold`} style={{ fontSize: '16px', color: '#496989' }}>Join a journey of learning, consulting & transformative programming [B2B | B2G | B2C] !</p>
+                        <p data-aos="zoom-in-left"
+                            data-aos-duration="1000" className={`ms-2 mt-2 fw-bold`} style={{ fontSize: '16px', color: '#496989' }}>Join a journey of learning, consulting & transformative programming [B2B | B2G | B2C] !</p>
                     </div>
                 </div>
                 <div className="flex flex-grow justify-center">
@@ -19,28 +27,30 @@ const Header = () => {
                             style={{ marginBottom: "55px", borderRadius: "35px", width: '1300px', height: '530px' }}
                             src={icon1}
                             alt="hero"
+                            data-aos="zoom-in-right"
+                            data-aos-duration="1000"
                         />
                     </div>
                 </div>
             </header>
-            <section >
+            <section>
                 <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-center w-full">
-                        <div className="flex gap-2 items-center  rounded-lg p-4 ">
-                            <p className="text-center mt-2 font-bold text-[#496989]">Users</p>
-                            <p className="text-center text-4xl mt-1 font-bold text-[#feba5b]">999+</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="flex flex-col items-center justify-center  rounded-lg p-4">
+                            <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Users</p>
+                            <CountUp start={0} end={999} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
-                        <div className="flex gap-2 items-center  rounded-lg p-4 ">
-                            <p className="text-center mt-2 font-bold text-[#496989]">Training</p>
-                            <p className="text-center text-4xl mt-1 font-bold text-[#feba5b]">24</p>
+                        <div className="flex flex-col items-center justify-center  rounded-lg p-4">
+                            <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Training</p>
+                            <CountUp start={0} end={24} duration={2.75} prefix="" suffix="" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
-                        <div className="flex gap-2 items-center  rounded-lg p-4">
-                            <p className="text-center mt-2 font-bold text-[#496989]">Module</p>
-                            <p className="text-center text-4xl mt-1 font-bold text-[#feba5b]">4530+</p>
+                        <div className="flex flex-col items-center justify-center  rounded-lg p-4">
+                            <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Modules</p>
+                            <CountUp start={0} end={453} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
-                        <div className="flex gap-2 items-center  rounded-lg p-4 ">
-                            <p className="text-center mt-2 font-bold text-[#496989]">Testimoni</p>
-                            <p className="text-center text-4xl mt-1 font-bold text-[#feba5b]">1200+</p>
+                        <div className="flex flex-col items-center justify-center  rounded-lg p-4">
+                            <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Testimonials</p>
+                            <CountUp start={0} end={120} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
                     </div>
                 </div>

@@ -26,14 +26,14 @@ const Login = () => {
       </Helmet>
       <div className={`flex flex-col lg:flex-row h-screen`}>
         {/* Bagian kanan - Form login */}
-        <div className="lg:w-1/2  flex flex-col items-center justify-center p-8 lg:p-0">
+        <div className="w-full lg:w-1/2 container flex flex-col items-center justify-center p-8 lg:p-0">
           <div className="absolute top-0 left-0">
             <img src={logo} style={{ width: '220px', height: '190px' }} alt="" />
             <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4 text-[#8b9679]">Log in to your Account</h2>
-            <p className="text-[#496989] px-[60px] mt-[-10px]  font-bold ">Welcome back !</p>
+            <p className="text-[#496989] px-[60px] mt-[-10px] font-bold">Welcome back!</p>
           </div>
-          <div className="w-full max-w-md mt-[150px]">
-            <form className=" w-[400px] rounded-[20px] px-8 pt-6 pb-8 mb-4">
+          <div className="w-full max-w-md mt-[190px]">
+            <form className="rounded-[20px] px-8 pt-6 pb-8 mb-4">
               <div className="mb-4">
                 <div className="relative">
                   <span className="absolute inset-y-0 left-0 pl-4 flex items-center text-gray-500">
@@ -61,7 +61,7 @@ const Login = () => {
                 </div>
               </div>
               <div className="mb-4 flex">
-                <p style={{ fontSize: '13px' }} className="text-blue-500 ms-auto">Forgot Password ?</p>
+                <p style={{ fontSize: '13px' }} className="text-blue-500 ms-auto">Forgot Password?</p>
               </div>
               <div className="flex items-center justify-between">
                 <button
@@ -82,11 +82,12 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Bagian kiri - Warna biru */}
-        <div className="lg:w-1/2 flex bg-[#feba5b] items-center justify-center p-8 lg:p-0">
+        {/* Bagian kiri - Warna biru (hidden di mobile) */}
+        <div className="hidden lg:flex lg:w-1/2 container bg-[#feba5b] items-center justify-center p-8 lg:p-0">
           <img src={logo2} alt="" style={{ borderRadius: '30px' }} />
         </div>
       </div>
+
     </>
 
   );

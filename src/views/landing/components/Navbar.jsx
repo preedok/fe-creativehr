@@ -24,7 +24,7 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <nav className={` ${isScrolled ? 'shadow-md fixed w-full bg-white' : ''}`} style={{ transition: 'opacity 0.6s, height 0.6s' }}>
+            <nav className={` ${isScrolled ? 'shadow-md fixed w-full bg-white' : ''}`} style={{ transition: 'opacity 0.6s, height 0.6s', zIndex: 99 }}>
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex items-center">
                         <img src={logo} alt="Logo" className="w-[100px] h-[90px]" />
