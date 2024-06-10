@@ -134,7 +134,7 @@ const Product = () => {
                                     <div data-aos="fade-up" data-aos-duration="1000" className="flex justify-between items-center mb-4">
                                         <span className="text-xl font-bold text-gray-900"><s className="text-red-500 text-sm">Rp. {product.price.toFixed(3)}</s> <s className='text-[green]'>Rp. {product.discountPrice.toFixed(3)}</s> </span>
                                     </div>
-                                    <button data-aos="fade-up" data-aos-duration="1000" className="w-full bg-[#feba5b] text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-300 flex justify-center items-center gap-2">
+                                    <button data-aos="fade-up" data-aos-duration="1000" className="w-full bg-[#feba5b] text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-300 flex justify-center items-center gap-2">
                                         <ShoppingCartIcon /> Checkout
                                     </button>
                                 </div>
