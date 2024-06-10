@@ -98,7 +98,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     return (
         <>
             {/* Side Bar Navigation */}
-            <div className={`fixed container top-0 left-0 ${isSidebarOpen ? 'w-[275px] ' : 'w-[120px] '} rounded-[35px] h-[95%] transition-transform`} aria-label="Sidebar">
+            <div className={`fixed container top-0 left-0 ${isSidebarOpen ? 'w-[275px] ' : 'w-[85px] '} rounded-[35px] h-[95%] transition-transform`} aria-label="Sidebar">
                 <div className="h-full flex flex-col bg-[#feba5b] m-5 rounded-[35px]">
                     <div className={`flex ${isSidebarOpen ? "bg-[#feba5b]  flex h-[70px] rounded-[35px]" : " bg-[#fffff] py-3 px-3 flex h-[70px] rounded-[35px]"}`} style={{ zIndex: 2 }}>
                         {isSidebarOpen ? (
@@ -112,7 +112,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                             </div>
                         ) : (
                             <button onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-                                <svg className={`w-8 ms-1 h-8 text-[#ffffff]`} aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={`w-8 ms-[-5px] h-8 text-[#ffffff]`} aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path clipRule="evenodd" fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                                 </svg>
                             </button>
@@ -134,7 +134,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                             </div>
                         ) : (
                             <div className="flex items-center">
-                                <div className="flex gap-2 items-center m-auto bg-[#9BB8CD] py-5 px-4 rounded-lg">
+                                <div className="flex gap-2 items-center m-auto rounded-lg">
                                     <img src={logout} alt="Logout Icon" width={40} height={40} />
                                 </div>
                             </div>
@@ -142,18 +142,39 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
                         <ul className="space-y-2 font-medium mt-6 ms-2 px-4">
                             {isSidebarOpen && <p className='mb-[25px] font-bold text-white'>MENU UTAMA</p>}
-                            <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>
-                                <p onClick={() => handleMenuClick('dashboard')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'dashboard' ? 'bg-[#BED1CF] dark:bg-[#BED1CF] text-white' : 'hover:bg-[#BED1CF] dark:hover:bg-[#BED1CF]  group'}`}>
-                                    <DashboardIcon />
-                                    {isSidebarOpen && <Link to='/dashboard'>Dashboard</Link>}
-                                </p>
-                            </li>
-                            <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer' }}>
-                                <p onClick={() => handleMenuClick('materi')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'materi' ? 'bg-[#BED1CF] dark:bg-[#BED1CF] text-white' : 'hover:bg-[#BED1CF] dark:hover:bg-[#BED1CF]  group'}`}>
-                                    <CastForEducationIcon />
-                                    {isSidebarOpen && <Link to='/materi'>Materi Saya</Link>}
-                                </p>
-                            </li>
+
+                            {isSidebarOpen ? (
+                                <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>
+                                    <p onClick={() => handleMenuClick('dashboard')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'dashboard' ? 'bg-[#BED1CF] dark:bg-[#BED1CF] text-white' : 'hover:bg-[#BED1CF] dark:hover:bg-[#BED1CF]  group'}`}>
+                                        <DashboardIcon />
+                                        {isSidebarOpen && <Link to='/dashboard'>Dashboard</Link>}
+                                    </p>
+                                </li>
+                            ) : (
+                                <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>
+                                        <p onClick={() => handleMenuClick('dashboard')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'dashboard' ? 'ms-[-20px] text-white' : 'ms-[-20px] group'}`}>
+                                        <DashboardIcon />
+                                        {isSidebarOpen && <Link to='/dashboard'>Dashboard</Link>}
+                                    </p>
+                                </li>
+                            )}
+                            {isSidebarOpen ? (
+                                <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer' }}>
+                                    <p onClick={() => handleMenuClick('materi')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'materi' ? 'bg-[#BED1CF] dark:bg-[#BED1CF] text-white' : 'hover:bg-[#BED1CF] dark:hover:bg-[#BED1CF]  group'}`}>
+                                        <CastForEducationIcon />
+                                        {isSidebarOpen && <Link to='/materi'>Materi Saya</Link>}
+                                    </p>
+                                </li>
+                            ) : (
+                                <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer' }}>
+                                        <p onClick={() => handleMenuClick('materi')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'materi' ? 'ms-[-20px] text-white' : 'ms-[-20px] group'}`}>
+                                        <CastForEducationIcon />
+                                        {isSidebarOpen && <Link to='/materi'>Materi Saya</Link>}
+                                    </p>
+                                </li>
+                            )}
+
+
                         </ul>
                     </div>
 
@@ -171,7 +192,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                         ) : (
                             <p
                                 onClick={onLogout}
-                                className='flex w-full justify-start ms-2 pb-0'
+                                className='flex w-full justify-start ms-[-12px] pb-0'
                                 variant='contained' size='small'
                                 style={{ cursor: 'pointer' }}
 
