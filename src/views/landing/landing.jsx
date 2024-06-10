@@ -6,6 +6,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Founder from './components/Founder';
 import Blog from './components/Blog';
+import Product from './components/Product';
 
 const Landing = () => {
     return (
@@ -17,6 +18,7 @@ const Landing = () => {
             <section className='mx-14'>
                 <Header />
                 <About />
+                <Product />
                 <Founder/>
                 <Blog/>
                 <Footer />

@@ -14,10 +14,11 @@ const Header = () => {
                 <div className="  flex flex-grow justify-center mt-[-120px] ">
                     <div className="text-left" style={{ lineHeight: '1.2' }}>
                         <h5 className={`fw-bold mt-5 ms-2`} style={{ fontSize: '50px', fontFamily: 'sans-serif' }} >
-                            <span data-aos="zoom-in-right"
-                                data-aos-duration="2000" style={{ color: '#B5C18E' }}>Creativehr <br /> <b style={{ color: '#feba5b' }}>Empowering growth through innovative training solutions</b> </span>
+                            <span data-aos="fade-up"
+                                data-aos-duration="1000" style={{ color: '#B5C18E' }}>Creativehr <br /> <b style={{ color: '#feba5b' }} data-aos="fade-down"
+                                    data-aos-duration="1000">Empowering growth through innovative training solutions</b> </span>
                         </h5>
-                        <p data-aos="zoom-in-left"
+                        <p data-aos="fade-up"
                             data-aos-duration="1000" className={`ms-2 mt-2 fw-bold`} style={{ fontSize: '16px', color: '#496989' }}>Join a journey of learning, consulting & transformative programming [B2B | B2G | B2C] !</p>
                     </div>
                 </div>
@@ -27,7 +28,7 @@ const Header = () => {
                             style={{ marginBottom: "55px", borderRadius: "35px", width: '1300px', height: '530px' }}
                             src={icon1}
                             alt="hero"
-                            data-aos="zoom-in-right"
+                            data-aos="fade-down"
                             data-aos-duration="1000"
                         />
                     </div>
