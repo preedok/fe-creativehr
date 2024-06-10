@@ -37,6 +37,24 @@ const Product = () => {
             price: 250.999,
             discountPrice: 225.999
         },
+        {
+            id: 4,
+            name: "Digital Marketing",
+            image: product,
+            description: "Strategies to boost your market presence digitally.",
+            rating: 3,
+            price: 250.999,
+            discountPrice: 225.999
+        },
+        {
+            id: 5,
+            name: "Digital Marketing",
+            image: product,
+            description: "Strategies to boost your market presence digitally.",
+            rating: 3,
+            price: 250.999,
+            discountPrice: 225.999
+        },
     ];
     const renderStars = (rating) => {
         let stars = [];
