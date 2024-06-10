@@ -119,7 +119,7 @@ const Product = () => {
                     See All <ArrowForwardIcon fontSize='small' />
                 </button>
             </div>
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto px-4 ">
                 <Slider {...settings} className="space-x-4">
                     {trainingProducts.map(product => (
                         <div key={product.id} className="px-2">
