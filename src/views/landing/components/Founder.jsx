@@ -24,7 +24,7 @@ const FounderComponent = ({ name, role, bio, image }) => {
 const Founder = () => {
     const founders = [
         { name: "Deni Rahmadani", role: "CEO", bio: "Deni has over 20 years of experience in the training industry.", image: profile },
-        { name: "Hehe", role: "CTO", bio: "Hehe is a pioneer in digital learning technologies.", image: profile },
+        { name: "Iqbal Apredo", role: "CTO", bio: "Iqbal is a pioneer in digital learning technologies.", image: profile },
         { name: "Maulana Lazuardi", role: "Commissioner", bio: "Maulana brings extensive expertise in business strategy.", image: profile },
         { name: "Handi Muharam", role: "President Commissioner", bio: "Handi is a respected leader with a proven track record in governance.", image: profile }
     ];
