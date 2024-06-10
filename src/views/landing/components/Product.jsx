@@ -109,8 +109,8 @@ const Product = () => {
     }, []);
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-between items-center container mx-auto px-4 py-2">
-                <div className="text-center md:flex-1 mb-4 md:mb-0">
+            <div className="flex flex-col md:flex-row items-center container mx-auto px-4 py-2">
+                <div className="text-center md:flex-1 mb-4 md:mb-0 md:ms-[100px]">
                     <h2 data-aos="fade-up"
                         data-aos-duration="1000" className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#8b9679] mb-2">
                         Training Products
@@ -120,11 +120,13 @@ const Product = () => {
                         Enhance your skills with our tailored training programs.
                     </p>
                 </div>
-                <button data-aos="fade-up"
-                    data-aos-duration="1000"
-                    className="text-[#feba5b] font-bold py-2 px-3 rounded-full hover:text-blue-700 transition-colors duration-300 flex items-center">
-                    See All <ArrowForwardIcon fontSize='small' />
-                </button>
+                <div>
+                    <button data-aos="fade-up"
+                        data-aos-duration="1000"
+                        className="text-[#feba5b] font-bold py-2 px-3 rounded-full hover:text-blue-700 transition-colors duration-300 flex items-center">
+                        See All <ArrowForwardIcon fontSize='small' />
+                    </button>
+                </div>
             </div>
             <div className="container mx-auto px-4 ">
                 <Slider {...settings} className="space-x-4">
