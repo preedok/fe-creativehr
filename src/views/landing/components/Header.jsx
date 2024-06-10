@@ -25,7 +25,7 @@ const Header = () => {
                 <div className="flex flex-grow justify-center">
                     <div className="text-right mt-[10px]">
                         <img
-                            style={{ marginBottom: "55px", borderRadius: "35px", width: '1300px', height: '530px' }}
+                            style={{  marginBottom: "55px", borderRadius: "35px", width: '1300px', height: '530px' }}
                             src={icon1}
                             alt="hero"
                             data-aos="fade-down"

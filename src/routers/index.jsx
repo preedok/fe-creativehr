@@ -7,6 +7,7 @@ import {
     useLocation,
 } from "react-router-dom";
 import Login from "../views/auth/login";
+import Register from "../views/auth/register";
 import Dashboard from "../views/admin/dashboard/dashboard";
 import Materi from "../views/admin/materi/materi";
 import Layout from "../layout/layout";
@@ -44,6 +45,7 @@ const Router = () => {
                     <Route path="/" element={<Landingpage />} />
                     {/* Auth Routes  */}
                     <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
                     {/* Main Routes */}
                     <Route path="/dashboard" element={<Layout />}>
                         <Route index element={<Dashboard />} />

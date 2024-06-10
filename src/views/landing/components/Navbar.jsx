@@ -10,6 +10,9 @@ const Navbar = () => {
     const handleLogin = () => {
         navigate('/login')
     }
+    const handleRegister = () => {
+        navigate('/register')
+    }
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
@@ -62,17 +65,21 @@ const Navbar = () => {
                     </div>
                 </div>
                 {isOpen && (
-                    <div className="md:hidden bg-white shadow-md py-2 px-4">
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Home</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">About Us</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Products</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Blog</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Regular Training</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">In House Training</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Video Training</a>
-                        <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Webinar</a>
-                        <button onClick={handleLogin} className="block mt-4 w-full text-white bg-[#feba5b] hover:bg-blue-600 transition-colors duration-200 ease-in-out px-9 rounded-full py-2">Login</button>
-                        <button className="block mt-2 w-full text-gray-800 bg-gray-200 hover:bg-gray-300 transition-colors duration-200 ease-in-out px-7 rounded-full py-2">Register</button>
+                    <div className='bg-white shadow-md md:hidden py-2 px-4'>
+                        <div >
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Home</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">About Us</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Products</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Blog</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Regular Training</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">In House Training</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Video Training</a>
+                            <a href="#" className="block py-1 text-gray-600 hover:text-gray-900">Webinar</a>
+                        </div>
+                        <div>
+                            <button onClick={handleLogin} className="block mt-4 w-full text-white bg-[#feba5b] hover:bg-blue-600 transition-colors duration-200 ease-in-out px-9 rounded-full py-2">Login</button>
+                            <button onClick={handleRegister} className="block mt-2 w-full text-gray-800 bg-gray-200 hover:bg-gray-300 transition-colors duration-200 ease-in-out px-7 rounded-full py-2">Register</button>
+                        </div>
                     </div>
                 )}
             </nav>
