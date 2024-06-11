@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex space-x-4">
                         <button onClick={handleLogin} className="text-white bg-[#feba5b] hover:bg-blue-600 transition-colors duration-200 ease-in-out px-9 rounded-full py-2">Login</button>
-                        <button className="text-gray-800 bg-gray-200 hover:bg-gray-300 transition-colors duration-200 ease-in-out px-7 rounded-full py-2">Register</button>
+                        <button onClick={handleRegister} className="text-gray-800 bg-gray-200 hover:bg-gray-300 transition-colors duration-200 ease-in-out px-7 rounded-full py-2">Register</button>
                     </div>
                 </div>
                 {isOpen && (
