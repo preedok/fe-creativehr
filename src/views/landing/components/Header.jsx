@@ -10,8 +10,8 @@ const Header = () => {
     }, []);
     return (
         <>
-            <header id='home' className={`flex container justify-center items-center mx-auto px-4 py-2 `}>
-                <div className="  flex flex-grow justify-center mt-[-120px] ">
+            <header id='home' className={` flex-col md:flex-row flex container justify-center items-center mx-auto px-4 py-2 `}>
+                <div className=" flex flex-grow justify-center md:mt-[-120px]  ">
                     <div className="text-left" style={{ lineHeight: '1.2' }}>
                         <h5 className={`fw-bold mt-5 ms-2`} style={{ fontSize: '50px', fontFamily: 'sans-serif' }} >
                             <span data-aos="fade-up"
