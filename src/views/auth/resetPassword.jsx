@@ -29,7 +29,7 @@ const ResetPassword = () => {
         <div className="w-full lg:w-1/2 container flex flex-col items-center justify-center p-8 lg:p-0">
           <div className="absolute top-0 left-0">
             <img src={logo} style={{ width: '220px', height: '190px' }} alt="" />
-            <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4 text-[#8b9679]">Log in to your Account</h2>
+            <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4 text-[#8b9679]">Reset Password</h2>
             <p className="text-[#496989] px-[60px] mt-[-10px] font-bold">Welcome back!</p>
           </div>
           <div className="w-full max-w-md mt-[190px]">
