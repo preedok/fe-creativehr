@@ -12,6 +12,7 @@ import Dashboard from "../views/admin/dashboard/dashboard";
 import Materi from "../views/admin/materi/materi";
 import Layout from "../layout/layout";
 import Search from '../views/admin/search/search'
+import Reset from '../views/auth/resetPassword'
 
 // /////////////////////////////////////////////
 import Landingpage from '../views/landing/landing'
@@ -45,6 +46,7 @@ const Router = () => {
                     <Route path="/" element={<Landingpage />} />
                     {/* Auth Routes  */}
                     <Route path="/login" element={<Login />} />
+                    <Route path="/reset" element={<Reset />} />
                     <Route path="/register" element={<Register />} />
                     {/* Main Routes */}
                     <Route path="/dashboard" element={<Layout />}>

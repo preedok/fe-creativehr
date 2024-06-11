@@ -14,16 +14,10 @@ import { FaUser, FaLock } from 'react-icons/fa';
 import logo1 from '../../assets/login1.svg'
 import logo2 from '../../assets/header.gif'
 import * as Yup from "yup";
-const Login = () => {
+const ResetPassword = () => {
   const navigate = useNavigate()
   const handleLogin = () => {
-    navigate('/dashboard')
-  }
-  const handleRegister = () => {
-    navigate('/register')
-  }
-  const handleReset = () => {
-    navigate('/reset')
+    navigate('/login')
   }
   return (
     <>
@@ -66,20 +60,14 @@ const Login = () => {
                   />
                 </div>
               </div>
-              <div className="mb-4 flex">
-                <p style={{ fontSize: '13px' }} onClick={handleReset} className="text-blue-500 ms-auto">Forgot Password?</p>
-              </div>
               <div className="flex items-center justify-between">
                 <button
                   className="bg-[#feba5b] hover:bg-blue-700 w-full text-white font-bold py-4 px-[60px] rounded-full focus:outline-none focus:shadow-outline"
                   type="button"
                   onClick={handleLogin}
                 >
-                  Login
+                  Reset
                 </button>
-              </div>
-              <div className="mt-4 text-center">
-                <p style={{ fontSize: '13px', color: '#496989' }}>Don't have account? <span className="text-blue-500" style={{cursor:'pointer'}} onClick={handleRegister}>Create an account</span></p>
               </div>
               <p className="text-center mt-5 text-gray-500 text-xs absolute bottom-0 left-0 px-4 mb-4 font-bold">
                 &copy;{new Date().getFullYear()} PT CREATIVE AND TRAINING DEVELOPMENT
@@ -99,4 +87,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ResetPassword;

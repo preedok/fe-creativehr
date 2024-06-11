@@ -96,7 +96,7 @@ const Register = () => {
                                 </button>
                             </div>
                             <div className="mt-4 text-center">
-                                <p style={{ fontSize: '13px', color: '#496989' }}>Don't have account? <span className="text-blue-500">Login</span></p>
+                                <p style={{ fontSize: '13px', color: '#496989' }}>Already have account? <span className="text-blue-500" style={{cursor:'pointer'}} onClick={handleRegister}>Login</span></p>
                             </div>
                             <p className="text-center mt-5 text-gray-500 text-xs absolute bottom-0 left-0 px-4 mb-4 font-bold">
                                 &copy;{new Date().getFullYear()} PT CREATIVE AND TRAINING DEVELOPMENT
