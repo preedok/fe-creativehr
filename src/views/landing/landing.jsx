@@ -15,7 +15,7 @@ const Landing = () => {
                 <title>Creative HR | Home</title>
             </Helmet>
             <Navbar />
-            <section className='mx-14'>
+            <section>
                 <Header />
                 <About />
                 <Product />
