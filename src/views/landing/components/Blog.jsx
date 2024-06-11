@@ -13,7 +13,7 @@ const Blog = () => {
         AOS.refresh();
     }, []);
     return (
-        <div id='blog' className="container mx-auto px-4 py-8">
+        <div id='blog' className="container mx-auto px-2  py-8">
             <div className="flex flex-col md:flex-row items-center container mx-auto px-4 py-2">
                 <div className="container mx-auto px-4 py-8 text-center md:ms-[150px]">
                     <h2 data-aos="zoom-in-left"

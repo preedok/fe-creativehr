@@ -11,7 +11,7 @@ const Footer = () => {
         AOS.refresh();
     }, []);
     return (
-        <footer className=" text-[#496989] p-10">
+        <footer className=" text-[#496989] p-10 md:flex-1 mb-4 md:mb-0 md:ms-[100px]">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 {/* Column 1: About the company */}
                 <div>

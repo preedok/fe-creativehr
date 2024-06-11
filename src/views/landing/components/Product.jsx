@@ -129,7 +129,7 @@ const Product = () => {
                 </div>
             </div>
             <div className="container mx-auto px-4 ">
-                <Slider {...settings} className="space-x-4">
+                <Slider {...settings} className="md:space-x-4">
                     {trainingProducts.map(product => (
                         <div key={product.id} className="px-2">
                             <div className="bg-white shadow-lg rounded-[25px] overflow-hidden">
