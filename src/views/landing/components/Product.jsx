@@ -109,7 +109,7 @@ const Product = () => {
     }, []);
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center container mx-auto px-4 py-2">
+            <div id='products' className="flex flex-col md:flex-row items-center container mx-auto px-4 py-2">
                 <div className="text-center md:flex-1 mb-4 md:mb-0 md:ms-[100px]">
                     <h2 data-aos="fade-up"
                         data-aos-duration="1000" className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#8b9679] mb-2">

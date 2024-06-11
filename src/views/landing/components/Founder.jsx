@@ -33,7 +33,7 @@ const Founder = () => {
         AOS.refresh();
     }, []);
     return (
-        <div className="about-us-sections">
+        <div id='founder' className="about-us-sections">
             <section className="w-full py-16  flex flex-col items-center">
                 <div className="max-w-7xl mx-auto text-center px-4">
                     <h2 data-aos="zoom-in-left"

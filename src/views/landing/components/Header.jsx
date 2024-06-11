@@ -10,7 +10,7 @@ const Header = () => {
     }, []);
     return (
         <>
-            <header className={`flex container justify-center items-center mx-auto px-4 py-2 `}>
+            <header id='home' className={`flex container justify-center items-center mx-auto px-4 py-2 `}>
                 <div className="  flex flex-grow justify-center mt-[-120px] ">
                     <div className="text-left" style={{ lineHeight: '1.2' }}>
                         <h5 className={`fw-bold mt-5 ms-2`} style={{ fontSize: '50px', fontFamily: 'sans-serif' }} >

@@ -56,7 +56,7 @@ const AboutUs = () => {
     }, []);
     return (
         <>
-            <section className="w-full py-16 bg-transparent flex flex-col items-center">
+            <section id='about' className="w-full py-16 bg-transparent flex flex-col items-center">
                 <div className="max-w-7xl mx-auto text-center px-4">
                     <h2 data-aos="zoom-in-left"
                         data-aos-duration="1000" className="text-4xl font-bold text-[#8b9679] mb-4">About Us</h2>
