@@ -73,7 +73,7 @@ const AboutUs = () => {
                     <Slider {...settings}>
                         {cardData.map((card, index) => (
                             <div key={index} className="p-4 relative">
-                                <div className="bg-white bg-opacity-70 shadow-lg  p-8 m-4 flex flex-col items-center relative">
+                                <div className="bg-white bg-opacity-80 shadow-lg  p-8 m-4 flex flex-col items-center relative">
                                     {/* React Player untuk video latar belakang */}
                                     <ReactPlayer
                                         url={card.videoUrl}
