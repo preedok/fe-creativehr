@@ -34,6 +34,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
+            <h1 className="text-center text-[200px]">LALA GILOOOOOO</h1>
             <section>
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
