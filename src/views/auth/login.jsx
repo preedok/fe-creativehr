@@ -35,8 +35,8 @@ const Login = () => {
         <div className="w-full lg:w-1/2 container flex flex-col items-center justify-center p-8 lg:p-0">
           <div className="absolute top-0 left-0">
             <img src={logo} style={{ width: '220px', height: '190px' }} alt="" />
-            <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4 text-[#8b9679]">Log in to your Account</h2>
-            <p className="text-[#496989] px-[60px] mt-[-10px] font-bold">Welcome back!</p>
+            <h2 className="px-[60px] mt-[-40px] text-2xl lg:text-3xl font-bold mb-4 text-[#8b9679]">Masuk ke Akun Anda</h2>
+            <p className="text-[#496989] px-[60px] mt-[-10px] font-bold">Selamat datang kembali!</p>
           </div>
           <div className="w-full max-w-md mt-[190px]">
             <form className="rounded-[20px] px-8 pt-6 pb-8 mb-4">
@@ -67,7 +67,7 @@ const Login = () => {
                 </div>
               </div>
               <div className="mb-4 flex">
-                <p style={{ fontSize: '13px' }} onClick={handleReset} className="text-blue-500 ms-auto">Forgot Password?</p>
+                <p style={{ fontSize: '13px' }} onClick={handleReset} className="text-blue-500 ms-auto">Lupa Kata Sandi?</p>
               </div>
               <div className="flex items-center justify-between">
                 <button
@@ -79,7 +79,7 @@ const Login = () => {
                 </button>
               </div>
               <div className="mt-4 text-center">
-                <p style={{ fontSize: '13px', color: '#496989' }}>Don't have account? <span className="text-blue-500" style={{cursor:'pointer'}} onClick={handleRegister}>Create an account</span></p>
+                <p style={{ fontSize: '13px', color: '#496989' }}>Belum punya akun? <span className="text-blue-500" style={{ cursor: 'pointer' }} onClick={handleRegister}>Buat akun</span></p>
               </div>
               <p className="text-center mt-5 text-gray-500 text-xs absolute bottom-0 left-0 px-4 mb-4 font-bold">
                 &copy;{new Date().getFullYear()} PT CREATIVE AND TRAINING DEVELOPMENT

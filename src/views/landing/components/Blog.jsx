@@ -17,17 +17,17 @@ const Blog = () => {
             <div className="flex flex-col md:flex-row items-center container mx-auto px-4 py-2">
                 <div className="container mx-auto px-4 py-8 text-center md:ms-[150px]">
                     <h2 data-aos="zoom-in-left"
-                        data-aos-duration="1000" className="text-4xl  font-bold text-[#8b9679] mb-4">Creativehr's Article</h2>
+                        data-aos-duration="1000" className="text-4xl  font-bold text-[#8b9679] mb-4">Artikel Creativehr</h2>
                     <p data-aos="zoom-in-right"
                         data-aos-duration="1000" className="text-lg text-[#496989] mb-1">
-                        Explore our insightful articles and learn more about industry trends and innovations.
+                        Jelajahi artikel-artikel kami yang informatif dan pelajari lebih lanjut tentang tren dan inovasi dalam industri.
                     </p>
                 </div>
                 <div className='md:w-[200px] md:ml-auto flex '>
                     <button data-aos="fade-up"
                         data-aos-duration="1000"
                         className="text-[#feba5b] md:ml-auto  font-bold py-2 px-3 rounded-full hover:text-blue-700 transition-colors duration-300 flex items-center">
-                        See All <ArrowForwardIcon fontSize='small' />
+                        Lihat semua <ArrowForwardIcon fontSize='small' />
                     </button>
                 </div>
             </div>
@@ -41,7 +41,7 @@ const Blog = () => {
                         <p data-aos="zoom-in-left"
                             data-aos-duration="1000" className="text-gray-700">{post.excerpt}</p>
                         <a data-aos="zoom-in-right"
-                            data-aos-duration="1000" href={`/blog/${post.id}`} style={{ fontSize: '13px' }} className="text-[#feba5b] font-semibold hover:text-blue-700">Read More</a>
+                            data-aos-duration="1000" href={`/blog/${post.id}`} style={{ fontSize: '13px' }} className="text-[#feba5b] font-semibold hover:text-blue-700">Baca selengkapnya..</a>
                     </div>
                 ))}
             </div>

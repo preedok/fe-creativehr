@@ -41,15 +41,16 @@ const AboutUs = () => {
     };
 
     const cardData = [
-        { icon: <FaRegLightbulb />, title: "Innovation", subtitle: "First card text", link: "#innovation" },
-        { icon: <FaRegSmile />, title: "Happiness", subtitle: "Second card text", link: "#happiness" },
-        { icon: <FaRegThumbsUp />, title: "Quality", subtitle: "Third card text", link: "#quality" },
-        { icon: <FaRegHeart />, title: "Passion", subtitle: "Fourth card text", link: "#passion" },
-        { icon: <FaRegLightbulb />, title: "Creativity", subtitle: "Fifth card text", link: "#creativity" },
-        { icon: <FaRegSmile />, title: "Joy", subtitle: "Sixth card text", link: "#joy" },
-        { icon: <FaRegThumbsUp />, title: "Excellence", subtitle: "Seventh card text", link: "#excellence" },
-        { icon: <FaRegHeart />, title: "Love", subtitle: "Eighth card text", link: "#love" }
+        { icon: <FaRegLightbulb />, title: "Inovasi", subtitle: "Tekst pertama", link: "#inovasi" },
+        { icon: <FaRegSmile />, title: "Kebahagiaan", subtitle: "Tekst kedua", link: "#kebahagiaan" },
+        { icon: <FaRegThumbsUp />, title: "Kualitas", subtitle: "Tekst ketiga", link: "#kualitas" },
+        { icon: <FaRegHeart />, title: "Passion", subtitle: "Tekst keempat", link: "#passion" },
+        { icon: <FaRegLightbulb />, title: "Kreativitas", subtitle: "Tekst kelima", link: "#kreativitas" },
+        { icon: <FaRegSmile />, title: "Kegembiraan", subtitle: "Tekst keenam", link: "#kegembiraan" },
+        { icon: <FaRegThumbsUp />, title: "Keunggulan", subtitle: "Tekst ketujuh", link: "#keunggulan" },
+        { icon: <FaRegHeart />, title: "Cinta", subtitle: "Tekst kedelapan", link: "#cinta" }
     ];
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -59,12 +60,10 @@ const AboutUs = () => {
             <section id='about' className="w-full py-16 bg-transparent flex flex-col items-center">
                 <div className="max-w-7xl mx-auto text-center px-4">
                     <h2 data-aos="zoom-in-left"
-                        data-aos-duration="1000" className="text-4xl font-bold text-[#8b9679] mb-4">About Us</h2>
+                        data-aos-duration="1000" className="text-4xl font-bold text-[#8b9679] mb-4">Tentang Kami</h2>
                     <p data-aos="zoom-in-right"
                         data-aos-duration="1000" className="text-lg text-[#496989] mb-8">
-                        At Creativehr, we are dedicated to fostering growth and development through innovative training solutions.
-                        Our mission is to provide top-notch learning experiences, consulting services, and transformative programming
-                        for businesses, governments, and individuals. Join us on a journey of continuous improvement and success.
+                        Di Creativehr, kami berdedikasi untuk mendorong pertumbuhan dan pengembangan melalui solusi pelatihan yang inovatif. Misi kami adalah menyediakan pengalaman belajar terbaik, layanan konsultasi, dan program transformasi untuk bisnis, pemerintah, dan individu. Bergabunglah dengan kami dalam perjalanan peningkatan dan kesuksesan yang berkelanjutan.
                     </p>
                 </div>
                 <div className="w-full max-w-7xl mx-auto px-4">
@@ -102,15 +101,15 @@ const AboutUs = () => {
                     </div>
                     <div className="w-full md:w-1/2 flex flex-col justify-center">
                         <h2 data-aos="zoom-in-left"
-                            data-aos-duration="1000" className="text-3xl font-bold text-center text-[#b5bea5] mb-6">Advantages of Training at Creativehr</h2>
+                            data-aos-duration="1000" className="text-3xl font-bold text-center text-[#b5bea5] mb-6">Keunggulan Pelatihan di Creativehr</h2>
                         <div className="flex items-center mb-4">
                             <FaCheckCircle className="text-[#feba5b] text-2xl mr-4" data-aos="zoom-in-right"
                                 data-aos-duration="1000" />
                             <div>
                                 <h3 data-aos="zoom-in-left"
-                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Custom Training</h3>
+                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Pelatihan Khusus</h3>
                                 <p data-aos="zoom-in-right"
-                                    data-aos-duration="1000" className="text-[#496989]">Tailored sessions for your company's specific needs, ensuring optimal effectiveness.</p>
+                                    data-aos-duration="1000" className="text-[#496989]">Sesi yang disesuaikan dengan kebutuhan spesifik perusahaan Anda, memastikan efektivitas optimal.</p>
                             </div>
                         </div>
                         <div className="flex items-center mb-4">
@@ -118,9 +117,9 @@ const AboutUs = () => {
                                 data-aos-duration="1000" className="text-[#feba5b] text-2xl mr-4" />
                             <div>
                                 <h3 data-aos="zoom-in-left"
-                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Experienced Instructors</h3>
+                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Instruktur Berpengalaman</h3>
                                 <p data-aos="zoom-in-right"
-                                    data-aos-duration="1000" className="text-[#496989]">Receive guidance from industry experts with practical experience and deep knowledge.</p>
+                                    data-aos-duration="1000" className="text-[#496989]">Dapatkan bimbingan dari para ahli industri dengan pengalaman praktis dan pengetahuan mendalam.</p>
                             </div>
                         </div>
                         <div className="flex items-center mb-4">
@@ -128,9 +127,9 @@ const AboutUs = () => {
                                 data-aos-duration="1000" className="text-[#feba5b] text-2xl mr-4" />
                             <div>
                                 <h3 data-aos="zoom-in-left"
-                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Practical Approach</h3>
+                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Pendekatan Praktis</h3>
                                 <p data-aos="zoom-in-right"
-                                    data-aos-duration="1000" className="text-[#496989]">Focus on practical application with real case studies and simulations for deeper learning.</p>
+                                    data-aos-duration="1000" className="text-[#496989]">Fokus pada aplikasi praktis dengan studi kasus nyata dan simulasi untuk pembelajaran yang lebih mendalam.</p>
                             </div>
                         </div>
                         <div className="flex items-center mb-4">
@@ -138,9 +137,9 @@ const AboutUs = () => {
                                 data-aos-duration="1000" className="text-[#feba5b] text-2xl mr-4" />
                             <div>
                                 <h3 data-aos="zoom-in-left"
-                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Ongoing Support</h3>
+                                    data-aos-duration="1000" className="text-2xl font-semibold text-[#feba5b]">Dukungan Berkelanjutan</h3>
                                 <p data-aos="zoom-in-right"
-                                    data-aos-duration="1000" className="text-[#496989]">We provide ongoing support post-training to ensure successful implementation in the field.</p>
+                                    data-aos-duration="1000" className="text-[#496989]">Kami menyediakan dukungan berkelanjutan setelah pelatihan untuk memastikan implementasi yang sukses di lapangan.</p>
                             </div>
                         </div>
                     </div>

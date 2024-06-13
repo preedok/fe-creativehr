@@ -23,10 +23,10 @@ const FounderComponent = ({ name, role, bio, image }) => {
 
 const Founder = () => {
     const founders = [
-        { name: "Deni Rahmadani", role: "CEO", bio: "Deni has over 20 years of experience in the training industry.", image: profile },
-        { name: "Iqbal Apredo", role: "CTO", bio: "Iqbal is a pioneer in digital learning technologies.", image: profile },
-        { name: "Maulana Lazuardi", role: "Commissioner", bio: "Maulana brings extensive expertise in business strategy.", image: profile },
-        { name: "Handi Muharam", role: "President Commissioner", bio: "Handi is a respected leader with a proven track record in governance.", image: profile }
+        { name: "Deni Rahmadani", role: "CEO", bio: "Deni memiliki pengalaman di industri pelatihan.", image: profile },
+        { name: "Iqbal Apredo", role: "CTO", bio: "Iqbal adalah pelopor dalam teknologi pembelajaran digital.", image: profile },
+        { name: "Maulana Lazuardi", role: "Komisaris", bio: "Maulana membawa keahlian yang luas dalam strategi bisnis.", image: profile },
+        { name: "Handi Muharam", role: "Komisaris Utama", bio: "Handi adalah seorang pemimpin yang dihormati dengan rekam jejak terbukti dalam tata kelola.", image: profile }
     ];
     useEffect(() => {
         AOS.init();
@@ -37,10 +37,10 @@ const Founder = () => {
             <section className="w-full py-16  flex flex-col items-center">
                 <div className="max-w-7xl mx-auto text-center px-4">
                     <h2 data-aos="zoom-in-left"
-                        data-aos-duration="1000" className="text-4xl font-bold text-[#8b9679] mb-4">Our Leadership Team</h2>
+                        data-aos-duration="1000" className="text-4xl font-bold text-[#8b9679] mb-4">Tim Creativehr</h2>
                     <p data-aos="zoom-in-right"
                         data-aos-duration="1000" className="text-lg text-[#496989] mb-8">
-                        Meet the visionary leaders behind Creativehr.
+                        Temui tentang sosok di balik tim Creativehr.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {founders.map((founder, index) => (

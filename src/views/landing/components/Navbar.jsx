@@ -42,13 +42,13 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex items-center space-x-9">
                         <a href="#home" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Home</a>
-                        <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">About Us</a>
-                        <a href="#products" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Products</a>
-                        <a href="#blog" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Blog</a>
-                        <a href="#founder" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Founder</a>
+                        <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Tentang</a>
+                        <a href="#products" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Produk</a>
+                        <a href="#blog" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Artikel</a>
+                        <a href="#founder" className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out">Pendiri</a>
                         <div className="relative">
                             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-gray-900 transition-colors duration-200 ease-in-out focus:outline-none flex items-center">
-                                Training <ArrowDropDownIcon className="ml-1" />
+                                Pelatihan <ArrowDropDownIcon className="ml-1" />
                             </button>
                             {isOpen && (
                                 <ul style={{zIndex: 99}} className="absolute bg-white shadow-md mt-2 py-2 rounded w-48">
@@ -69,10 +69,10 @@ const Navbar = () => {
                     <div className='bg-white shadow-md md:hidden py-2 px-4'>
                         <div >
                             <a href="#home" className="block py-1 text-gray-600 hover:text-gray-900">Home</a>
-                            <a href="#about" className="block py-1 text-gray-600 hover:text-gray-900">About Us</a>
-                            <a href="#products" className="block py-1 text-gray-600 hover:text-gray-900">Products</a>
-                            <a href="#blog" className="block py-1 text-gray-600 hover:text-gray-900">Blog</a>
-                            <a href="#founder" className="block py-1 text-gray-600 hover:text-gray-900">Founder</a>
+                            <a href="#about" className="block py-1 text-gray-600 hover:text-gray-900">Tentang</a>
+                            <a href="#products" className="block py-1 text-gray-600 hover:text-gray-900">Produk</a>
+                            <a href="#blog" className="block py-1 text-gray-600 hover:text-gray-900">Artikel</a>
+                            <a href="#founder" className="block py-1 text-gray-600 hover:text-gray-900">Pendiri</a>
                             <a href="#regular" className="block py-1 text-gray-600 hover:text-gray-900">Regular Training</a>
                             <a href="#inhouse" className="block py-1 text-gray-600 hover:text-gray-900">In House Training</a>
                             <a href="#video" className="block py-1 text-gray-600 hover:text-gray-900">Video Training</a>

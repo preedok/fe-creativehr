@@ -16,34 +16,34 @@ const Footer = () => {
                 {/* Column 1: About the company */}
                 <div>
                     <h5 data-aos="zoom-in-left"
-                        data-aos-duration="1000" className="text-lg font-semibold mb-3">About Us</h5>
+                        data-aos-duration="1000" className="text-lg font-semibold mb-3">Tentang kami</h5>
                     <p data-aos="zoom-in-right"
                         data-aos-duration="1000" className="text-sm">
-                        We are committed to delivering exceptional service and innovative solutions. Our mission is to empower our clients and help them achieve their goals.
+                        Kami berkomitmen untuk memberikan layanan yang luar biasa dan solusi-solusi inovatif. Misi kami adalah memberdayakan klien kami dan membantu mereka mencapai tujuan mereka.
                     </p>
                 </div>
 
                 {/* Column 2: Quick Links */}
                 <div>
-                    <h5 className="text-lg font-semibold mb-3">Quick Links</h5>
+                    <h5 className="text-lg font-semibold mb-3">Tautan Cepat</h5>
                     <ul className="text-sm space-y-2">
                         <li><a data-aos="zoom-in-left"
                             data-aos-duration="1000" href="/home" className="hover:text-gray-300">Home</a></li>
                         <li><a data-aos="zoom-in-right"
-                            data-aos-duration="1000" href="/about" className="hover:text-gray-300">About Us</a></li>
+                            data-aos-duration="1000" href="/about" className="hover:text-gray-300">Tentang</a></li>
                         <li><a data-aos="zoom-in-left"
-                            data-aos-duration="1000" href="/product" className="hover:text-gray-300">Products</a></li>
+                            data-aos-duration="1000" href="/product" className="hover:text-gray-300">Produk</a></li>
                         <li><a data-aos="zoom-in-right"
-                            data-aos-duration="1000" href="/blog" className="hover:text-gray-300">Blog</a></li>
+                            data-aos-duration="1000" href="/blog" className="hover:text-gray-300">Artikel</a></li>
                         <li><a data-aos="zoom-in-left"
-                            data-aos-duration="1000" href="/contact" className="hover:text-gray-300">Contact Us</a></li>
+                            data-aos-duration="1000" href="/contact" className="hover:text-gray-300">Kontak kami</a></li>
                     </ul>
                 </div>
 
                 {/* Column 3: Contact Information */}
                 <div>
                     <h5 data-aos="zoom-in-left"
-                        data-aos-duration="1000" className="text-lg font-semibold mb-3">Contact Us</h5>
+                        data-aos-duration="1000" className="text-lg font-semibold mb-3">Kontak kami</h5>
                     <ul className="text-sm space-y-2">
                         <li data-aos="zoom-in-right"
                             data-aos-duration="1000">Jl AD PREMIER LANTAI 17 SUITE 04 B, JL. TB. SIMATUPANG NO. 5 RT/RW.005/007 Kelurahan RAGUNAN, Kecamatan PASAR MINGGU, JAKARTA SELATAN , DKI JAKARTA 12550</li>
@@ -56,7 +56,7 @@ const Footer = () => {
 
                 {/* Column 4: Social Media Links */}
                 <div>
-                    <h5 className="text-lg font-semibold mb-3">Follow Us</h5>
+                    <h5 className="text-lg font-semibold mb-3">Follow kami</h5>
                     <div className="flex space-x-4">
                         <a data-aos="zoom-in-left"
                             data-aos-duration="1000" href="https://facebook.com" className="hover:text-gray-300">

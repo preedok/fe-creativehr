@@ -38,19 +38,19 @@ const Header = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="flex flex-col items-center justify-center  rounded-lg p-4">
-                            <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Users</p>
+                            <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">User</p>
                             <CountUp start={0} end={999} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
                         <div className="flex flex-col items-center justify-center  rounded-lg p-4">
-                            <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Training</p>
+                            <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Pelatihan</p>
                             <CountUp start={0} end={24} duration={2.75} prefix="" suffix="" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
                         <div className="flex flex-col items-center justify-center  rounded-lg p-4">
-                            <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Modules</p>
+                            <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Modul</p>
                             <CountUp start={0} end={453} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
                         <div className="flex flex-col items-center justify-center  rounded-lg p-4">
-                            <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Testimonials</p>
+                            <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Testimoni</p>
                             <CountUp start={0} end={120} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
                     </div>
