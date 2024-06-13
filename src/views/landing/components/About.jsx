@@ -1,5 +1,9 @@
-import React, {useEffect} from 'react'
-import { FaRegLightbulb, FaRegSmile, FaRegThumbsUp, FaRegHeart, FaCheckCircle } from 'react-icons/fa';
+import React, { useEffect } from 'react'
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
+import CastForEducationIcon from '@mui/icons-material/CastForEducation';
+import { FaCheckCircle } from 'react-icons/fa'; // atau impor ikon lainnya sesuai kebutuhan
 import icon2 from '../../../assets/icon2.gif'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -41,14 +45,12 @@ const AboutUs = () => {
     };
 
     const cardData = [
-        { icon: <FaRegLightbulb />, title: "Inovasi", subtitle: "Tekst pertama", link: "#inovasi" },
-        { icon: <FaRegSmile />, title: "Kebahagiaan", subtitle: "Tekst kedua", link: "#kebahagiaan" },
-        { icon: <FaRegThumbsUp />, title: "Kualitas", subtitle: "Tekst ketiga", link: "#kualitas" },
-        { icon: <FaRegHeart />, title: "Passion", subtitle: "Tekst keempat", link: "#passion" },
-        { icon: <FaRegLightbulb />, title: "Kreativitas", subtitle: "Tekst kelima", link: "#kreativitas" },
-        { icon: <FaRegSmile />, title: "Kegembiraan", subtitle: "Tekst keenam", link: "#kegembiraan" },
-        { icon: <FaRegThumbsUp />, title: "Keunggulan", subtitle: "Tekst ketujuh", link: "#keunggulan" },
-        { icon: <FaRegHeart />, title: "Cinta", subtitle: "Tekst kedelapan", link: "#cinta" }
+        {
+            icon: <LocalLibraryIcon fontSize="large" />, title: "Regular Training", subtitle: "Pelatihan secara rutin untuk pengembangan keterampilan.", link: "#inovasi"
+        },
+        { icon: <ApartmentIcon fontSize="large" />, title: "In House Training", subtitle: "Pelatihan yang diselenggarakan di dalam perusahaan atau organisasi.", link: "#kebahagiaan" },
+        { icon: <OndemandVideoIcon fontSize="large" />, title: "Video Traning", subtitle: "Pelatihan yang dapat diakses melalui video untuk kemudahan akses.", link: "#kualitas" },
+        { icon: <CastForEducationIcon fontSize="large" />, title: "Webinar", subtitle: "Sesi pelatihan online dengan pemateri ahli di bidangnya.", link: "#passion" },
     ];
 
     useEffect(() => {
@@ -76,9 +78,9 @@ const AboutUs = () => {
                                     <h3 data-aos="zoom-in-left"
                                         data-aos-duration="1000" className="text-2xl font-bold text-gray-800 mb-2">{card.title}</h3>
                                     <p data-aos="zoom-in-right"
-                                        data-aos-duration="1000" className="text-gray-600 mb-4">{card.subtitle}</p>
+                                        data-aos-duration="1000" className="text-gray-600 mb-4 text-center">{card.subtitle}</p>
                                     <a data-aos="zoom-in-left"
-                                        data-aos-duration="1000" style={{fontSize:'13px', fontWeight:'700'}} href={card.link} className="mt-4 px-4 py-2 rounded-full bg-[#feba5b] hover:bg-blue-600 text-white">
+                                        data-aos-duration="1000" style={{ fontSize: '13px', fontWeight: '700' }} href={card.link} className="mt-4 px-4 py-2 rounded-full bg-[#feba5b] hover:bg-blue-600 text-white">
                                         Learn More
                                     </a>
                                 </div>
@@ -93,7 +95,7 @@ const AboutUs = () => {
                         <img
                             data-aos="zoom-in-right"
                             data-aos-duration="1000"
-                            src={icon2} 
+                            src={icon2}
                             alt="creativehr"
                             className="rounded-[20px] shadow-lg mb-5 m-auto"
                             style={{ width: '90%', height: 'auto' }}
