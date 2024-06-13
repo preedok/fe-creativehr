@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import icon1 from '../../../assets/icon1.gif'
+import lalagilo from '../../../assets/lalajpg.jpg'
 import CountUp from 'react-countup';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -34,7 +35,12 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <h1 className="text-center text-[200px]">LALA GILOOOOOO</h1>
+            <div className='flex m-[50px] gap-[20px] justify-start ' >
+                <img src={lalagilo} alt="" className='rounded-full' style={{ width: '400px', height: '400px', fontWeight:'700' }} />
+                <h1 className="text-center text-[100px]" style={{fontWeight:'700'}}>LALA <br /> GILOOOOOO</h1>
+                
+            </div>
+            <p className='text-center text-[100px] mb-[100px]' style={{fontWeight:'700'}}>Lala ayangnya Iqbal, muaaaaahhhh</p>
             <section>
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
