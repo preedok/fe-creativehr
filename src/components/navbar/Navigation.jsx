@@ -113,30 +113,30 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                             {isSidebarOpen && <p className='mb-[25px] font-bold text-white'>MENU UTAMA</p>}
 
                             {isSidebarOpen ? (
-                                <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>
+                                <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer', fontSize: '15px' }}>
                                     <p onClick={() => handleMenuClick('dashboard')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'dashboard' ? 'bg-[#BED1CF] dark:bg-[#BED1CF] text-white' : 'hover:bg-[#BED1CF] dark:hover:bg-[#BED1CF]  group'}`}>
                                         <DashboardIcon />
                                         {isSidebarOpen && <Link to='/dashboard'>Dashboard</Link>}
                                     </p>
                                 </li>
                             ) : (
-                                <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>
-                                        <p onClick={() => handleMenuClick('dashboard')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'dashboard' ? 'ms-[-20px] text-white' : 'ms-[-20px] group'}`}>
+                                <li onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer', fontSize: '15px' }}>
+                                    <p onClick={() => handleMenuClick('dashboard')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'dashboard' ? 'ms-[-20px] text-white' : 'ms-[-20px] group'}`}>
                                         <DashboardIcon />
                                         {isSidebarOpen && <Link to='/dashboard'>Dashboard</Link>}
                                     </p>
                                 </li>
                             )}
                             {isSidebarOpen ? (
-                                <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer' }}>
+                                <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer', fontSize: '15px' }}>
                                     <p onClick={() => handleMenuClick('materi')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'materi' ? 'bg-[#BED1CF] dark:bg-[#BED1CF] text-white' : 'hover:bg-[#BED1CF] dark:hover:bg-[#BED1CF]  group'}`}>
                                         <CastForEducationIcon />
                                         {isSidebarOpen && <Link to='/materi'>Materi Saya</Link>}
                                     </p>
                                 </li>
                             ) : (
-                                <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer' }}>
-                                        <p onClick={() => handleMenuClick('materi')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'materi' ? 'ms-[-20px] text-white' : 'ms-[-20px] group'}`}>
+                                <li onClick={() => navigate('/materi')} style={{ cursor: 'pointer', fontSize: '15px' }}>
+                                    <p onClick={() => handleMenuClick('materi')} className={`flex gap-3 items-center p-2 rounded-lg text-gray-500 ${activeMenu === 'materi' ? 'ms-[-20px] text-white' : 'ms-[-20px] group'}`}>
                                         <CastForEducationIcon />
                                         {isSidebarOpen && <Link to='/materi'>Materi Saya</Link>}
                                     </p>
