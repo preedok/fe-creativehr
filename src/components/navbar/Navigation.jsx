@@ -13,7 +13,6 @@ import Swal from "sweetalert2";
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     const location = useLocation();
     const currentPath = location.pathname;
-    const dataUser = localStorage.getItem('role')
     const [activeMenu, setActiveMenu] = useState('dashboard');
     useEffect(() => {
         if (currentPath === '/dashboard') {
