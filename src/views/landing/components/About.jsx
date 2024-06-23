@@ -73,9 +73,9 @@ const AboutUs = () => {
                     <Slider {...settings}>
                         {cardData.map((card, index) => (
                             <div key={index} className="p-4 relative">
-                                <div className="bg-white bg-opacity-80 shadow-lg  p-8 m-4 flex flex-col items-center relative">
+                                <div className="bg-white rounded-[20px] bg-opacity-80 shadow-lg  p-8 m-4 flex flex-col items-center relative">
                                     {/* React Player untuk video latar belakang */}
-                                    <ReactPlayer
+                                    {/* <ReactPlayer
                                         url={card.videoUrl}
                                         playing={true}
                                         loop={true}
@@ -84,7 +84,7 @@ const AboutUs = () => {
                                         height="100%"
                                         style={{ position: 'absolute', top: 0, left: 0, zIndex: -1 }}
                                         className="rounded-[25px]"
-                                    />
+                                    /> */}
                                     {/* Konten teks dan ikon di atas video */}
                                     <div className="z-10 relative text-center">
                                         <div className="text-5xl text-gray-800 mb-4">{card.icon}</div>
