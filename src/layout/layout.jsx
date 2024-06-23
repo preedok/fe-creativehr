@@ -19,7 +19,7 @@ const Layout = () => {
     return (
         <div className="flex h-screen">
             <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
-            <div className={`flex-1 ${isSidebarOpen ? "sm:ml-52 transition-all duration-500 ease-out" : "sm:ml-9 transition-all duration-500 ease-out"} flex flex-col overflow-hidden p-2 overflow-y-auto`}>
+            <div className={`flex-1 ${isSidebarOpen ? "sm:ml-40 transition-all duration-500 ease-out" : "sm:ml-9 transition-all duration-500 ease-out"} flex flex-col overflow-hidden p-2 overflow-y-auto`}>
                 <Outlet />
             </div>
         </div>

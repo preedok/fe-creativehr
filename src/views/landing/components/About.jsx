@@ -3,7 +3,7 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import CastForEducationIcon from '@mui/icons-material/CastForEducation';
-import { FaCheckCircle } from 'react-icons/fa'; 
+import { FaCheckCircle } from 'react-icons/fa';
 import icon2 from '../../../assets/icon2.gif'
 import ReactPlayer from 'react-player';
 import Slider from 'react-slick';

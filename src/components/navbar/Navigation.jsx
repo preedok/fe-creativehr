@@ -6,18 +6,14 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import CastForEducationIcon from '@mui/icons-material/CastForEducation';
 import Button from "@mui/material/Button";
 import { useLocation } from 'react-router-dom';
-import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
-import BackupTableIcon from '@mui/icons-material/BackupTable';
 import logout from "../../assets/logout.png";
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import { clearAuth } from "../../utils/token";
 import Swal from "sweetalert2";
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     const location = useLocation();
     const currentPath = location.pathname;
     const dataUser = localStorage.getItem('role')
-    const isAdminP2 = dataUser && dataUser.includes("P2");
     const [activeMenu, setActiveMenu] = useState('dashboard');
     useEffect(() => {
         if (currentPath === '/dashboard') {
@@ -35,34 +31,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             setIsSidebarOpen(false);
         }
     };
-    const handleMenuMonitoring = () => {
-        setIsSubMenuOpen(!isSubMenuOpen);
-    }
-    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
-    const handleSubMenuItemClick = (submenuItem) => {
-        console.log(`Clicked on submenu item: ${submenuItem}`);
-    };
-    const handleMenuLog = () => {
-        setIsSubMenuOpenLog(!isSubMenuOpenLog);
-    }
-    const [isSubMenuOpenLog, setIsSubMenuOpenLog] = useState(false);
-    const handleSubMenuItemClickLog = (submenuItem) => {
-        console.log(`Clicked on submenu item: ${submenuItem}`);
-    };
-    const handleMenuSetting = () => {
-        setIsSubMenuOpenSetting(!isSidebarOpenSetting);
-    }
-    const [isSidebarOpenSetting, setIsSubMenuOpenSetting] = useState(false);
-    const handleSubMenuItemClickSetting = (submenuItem) => {
-        console.log(`Clicked on submenu item: ${submenuItem}`);
-    };
     const navigate = useNavigate();
-    // const devices = import.meta.env.VITE_REACT_APP_API_URL_DEVICES
-    const [searchQuery, setSearchQuery] = useState('');
-    const handleSearch = (event) => {
-        event.preventDefault();
-        navigate(`/search?query=${searchQuery}`);
-    };
     const onLogout = () => {
         Swal.fire({
             title: 'Logout Confirmation',
@@ -98,14 +67,14 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     return (
         <>
             {/* Side Bar Navigation */}
-            <div className={`fixed container top-0 left-0 ${isSidebarOpen ? 'w-[275px] ' : 'w-[85px] '} rounded-[35px] h-[95%] transition-transform`} aria-label="Sidebar">
+            <div className={`fixed container top-0 left-0 ${isSidebarOpen ? 'w-[223px] ' : 'w-[85px] '} rounded-[35px] h-[95%] transition-transform`} aria-label="Sidebar">
                 <div className="h-full flex flex-col bg-[#feba5b] m-5 rounded-[35px]">
                     <div className={`flex ${isSidebarOpen ? "bg-[#feba5b]  flex h-[70px] rounded-[35px]" : " bg-[#fffff] py-3 px-3 flex h-[70px] rounded-[35px]"}`} style={{ zIndex: 2 }}>
                         {isSidebarOpen ? (
                             <div className='flex '>
                                 <img onClick={() => setIsSidebarOpen(!isSidebarOpen)} src={logo} style={{ width: '170px', height: '120px' }} className={`px-3 mt-[-15px] me-[85px] ms-[-40px] hidden lg:inline`} alt="Flowbite Logo" />
                                 <button style={{ marginTop: '-15px' }} onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-                                    <svg className={`w-8 h-8 text-[white] ms-[-35px]`} aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className={`w-8 h-8 text-[white] ms-[-75px] mt-3`} aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path clipRule="evenodd" fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                                     </svg>
                                 </button>
