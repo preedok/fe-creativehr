@@ -43,7 +43,7 @@ const Footer = () => {
                 {/* Column 3: Contact Information */}
                 <div>
                     <h5 data-aos="zoom-in-left"
-                        data-aos-duration="1000" className="text-lg font-semibold mb-3">Kontak kami</h5>
+                        data-aos-duration="1000" className="text-lg font-semibold mb-3">Alamat kantor</h5>
                     <ul className="text-sm space-y-2">
                         <li data-aos="zoom-in-right"
                             data-aos-duration="1000">Jl AD PREMIER LANTAI 17 SUITE 04 B, JL. TB. SIMATUPANG NO. 5 RT/RW.005/007 Kelurahan RAGUNAN, Kecamatan PASAR MINGGU, JAKARTA SELATAN , DKI JAKARTA 12550</li>
