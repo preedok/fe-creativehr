@@ -43,7 +43,7 @@ const Header = () => {
                         </div>
                         <div className="flex flex-col items-center justify-center  rounded-lg p-4">
                             <p data-aos="zoom-in-left" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Pelatihan</p>
-                            <CountUp start={0} end={24} duration={2.75} prefix="" suffix="" decimals={0} className="text-4xl font-bold text-yellow-500" />
+                            <CountUp start={0} end={24} duration={2.75} prefix="" suffix="+" decimals={0} className="text-4xl font-bold text-yellow-500" />
                         </div>
                         <div className="flex flex-col items-center justify-center  rounded-lg p-4">
                             <p data-aos="zoom-in-right" data-aos-duration="1000" className="font-bold text-gray-700 mb-2">Modul</p>
